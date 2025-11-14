@@ -4,9 +4,10 @@ import dotenv from "dotenv";
 import axios from "axios";
 import OpenAI from "openai";
 import { google } from "googleapis";
-import creds from "./service-account.json" assert { type: "json" }; // Google Service Account JSON key
 
-dotenv.config();
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config(); // Локал dev-д .env уншина
+}
 
 const app = express();
 app.use(bodyParser.json());

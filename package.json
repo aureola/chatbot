@@ -12,8 +12,8 @@
     "openai": "^6.7.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development node server.js"
   },
   "keywords": [],
   "author": "",
