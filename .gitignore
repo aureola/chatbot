@@ -1,6 +1,10 @@
 # Environment variables
 .env
 
+# Node artifact files
+node_modules/
+dist/
+
 # Service account files
 service-account.json
 *.json  # Хэрэв бусад ижил төстэй файл байвал
