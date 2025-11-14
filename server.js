@@ -15,10 +15,11 @@ app.use(bodyParser.json());
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-console.log(process.env.GOOGLE_CREDENTIALS);
+
 // Google Sheets тохиргоо
+const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS || "{}");
 const client = new google.auth.GoogleAuth({
-  credentials: process.env.GOOGLE_CREDENTIALS,
+  credentials,
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 const sheets = google.sheets({ version: "v4", auth: client });
