@@ -12,16 +12,19 @@
     "openai": "^6.7.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://aureola91@bitbucket.org/aureola91/chatbot.git"
+    "url": "https://github.com/aureola/chatbot.git"
   },
-  "homepage": "https://bitbucket.org/aureola91/chatbot#readme",
-  "description": ""
+  "homepage": "https://github.com/aureola/chatbot#readme",
+  "description": "FB Chatbot with OpenAI and Google Cloud"
 }
