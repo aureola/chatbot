@@ -1,0 +1,6 @@
+# Environment variables
+.env
+
+# Service account files
+service-account.json
+*.json  # Хэрэв бусад ижил төстэй файл байвал
