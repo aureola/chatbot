@@ -17,7 +17,7 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 // Google Sheets тохиргоо
 const client = new google.auth.GoogleAuth({
-  credentials: creds,
+  credentials: process.env.GOOGLE_CREDENTIALS,
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 const sheets = google.sheets({ version: "v4", auth: client });
